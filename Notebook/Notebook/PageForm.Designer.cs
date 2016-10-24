@@ -41,6 +41,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(476, 377);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // PageForm
             // 
@@ -51,6 +52,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PageForm";
             this.Text = "NewPage";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PageForm_FormClosing);
             this.ResumeLayout(false);
 
         }
