@@ -34,6 +34,7 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.AcceptsTab = true;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
@@ -52,7 +53,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PageForm";
             this.Text = "NewPage";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PageForm_FormClosing);
             this.ResumeLayout(false);
 
         }

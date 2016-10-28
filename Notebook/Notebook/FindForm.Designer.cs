@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FindForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tbFind = new System.Windows.Forms.TextBox();
             this.btnFind = new System.Windows.Forms.Button();
-            this.btnFindAndReplase = new System.Windows.Forms.Button();
-            this.tbFindAnd = new System.Windows.Forms.TextBox();
+            this.tbFind = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tbReplace = new System.Windows.Forms.TextBox();
+            this.tbFindAnd = new System.Windows.Forms.TextBox();
+            this.btnFindAndReplase = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -65,6 +65,23 @@
             this.tabPage1.Text = "Найти";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnFind
+            // 
+            this.btnFind.Location = new System.Drawing.Point(211, 31);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(75, 23);
+            this.btnFind.TabIndex = 1;
+            this.btnFind.Text = "Знайти";
+            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // tbFind
+            // 
+            this.tbFind.Location = new System.Drawing.Point(49, 33);
+            this.tbFind.Name = "tbFind";
+            this.tbFind.Size = new System.Drawing.Size(127, 20);
+            this.tbFind.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tbReplace);
@@ -78,22 +95,19 @@
             this.tabPage2.Text = "Найти і замінити";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tbFind
+            // tbReplace
             // 
-            this.tbFind.Location = new System.Drawing.Point(57, 34);
-            this.tbFind.Name = "tbFind";
-            this.tbFind.Size = new System.Drawing.Size(100, 20);
-            this.tbFind.TabIndex = 0;
+            this.tbReplace.Location = new System.Drawing.Point(212, 29);
+            this.tbReplace.Name = "tbReplace";
+            this.tbReplace.Size = new System.Drawing.Size(104, 20);
+            this.tbReplace.TabIndex = 2;
             // 
-            // btnFind
+            // tbFindAnd
             // 
-            this.btnFind.Location = new System.Drawing.Point(184, 31);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(75, 23);
-            this.btnFind.TabIndex = 1;
-            this.btnFind.Text = "Знайти";
-            this.btnFind.UseVisualStyleBackColor = true;
-            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            this.tbFindAnd.Location = new System.Drawing.Point(21, 29);
+            this.tbFindAnd.Name = "tbFindAnd";
+            this.tbFindAnd.Size = new System.Drawing.Size(104, 20);
+            this.tbFindAnd.TabIndex = 1;
             // 
             // btnFindAndReplase
             // 
@@ -103,20 +117,7 @@
             this.btnFindAndReplase.TabIndex = 0;
             this.btnFindAndReplase.Text = "Знайти і замінити на";
             this.btnFindAndReplase.UseVisualStyleBackColor = true;
-            // 
-            // tbFindAnd
-            // 
-            this.tbFindAnd.Location = new System.Drawing.Point(21, 29);
-            this.tbFindAnd.Name = "tbFindAnd";
-            this.tbFindAnd.Size = new System.Drawing.Size(104, 20);
-            this.tbFindAnd.TabIndex = 1;
-            // 
-            // tbReplace
-            // 
-            this.tbReplace.Location = new System.Drawing.Point(212, 29);
-            this.tbReplace.Name = "tbReplace";
-            this.tbReplace.Size = new System.Drawing.Size(104, 20);
-            this.tbReplace.TabIndex = 2;
+            this.btnFindAndReplase.Click += new System.EventHandler(this.btnFindAndReplase_Click);
             // 
             // FindForm
             // 
